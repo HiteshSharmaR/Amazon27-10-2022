@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.486">
+    <testcase classname="Adding item to cart" name="Add multiple products to wishlist, select one product from wishlist and add it to cart." time="5.27">
+        <failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 119.0.6045.200 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: '4.1.0', revision: '87802e897b'&#10;System info: host: 'LAPTOP-OIRC7OM5', ip: '10.172.0.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given Navigate to website...................................................failed
+And Navigate to search section and search for mobiles.......................skipped
+And Select the specific mobile, capture the Name of the product as displayed on UI.skipped
+And Check for the Size Name and colors available and print the same on console..skipped
+And Navigate to Customer questions & answers and list top 3 questions and answers..skipped
+And Add the item to the cart, put assertion on the product added to cart....skipped
+When Navigate to Shopping Cart button, increase the order Quantity to.......skipped
+Then Verify the item quantity inside the cart and list the total amount for the order..skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 119.0.6045.200 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'LAPTOP-OIRC7OM5', ip: '10.172.0.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:104)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:80)
+	at StepDefinition.BaseClass.Setup(BaseClass.java:24)
+	at StepDefinition.AddMultipleProductsToWishlistAndSelectOneProductFromWishlistAndAddItToCart.navigate_to_website(AddMultipleProductsToWishlistAndSelectOneProductFromWishlistAndAddItToCart.java:43)
+	at ✽.Navigate to website.(file:///C:/Users/honey/IdeaProjects/Amazon27-10-2022/src/test/java/FeatureFile/TCTC-01.feature:4)
+]]></failure>
+    </testcase>
+</testsuite>
